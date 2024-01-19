@@ -1,0 +1,21 @@
+# General
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+.env
+.vscode
+
+# Django specific
+db.sqlite3
+db.sqlite3-journal
+media
+
+# Virtual environment
+venv/
+env/
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.tox

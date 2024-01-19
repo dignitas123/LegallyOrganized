@@ -1,0 +1,8 @@
+# Ignore virtual environment:
+venv/
+
+# Ignore other unnecessary files:
+*.pyc
+__pycache__/
+db.sqlite3
+.DS_Store  # for macOS users

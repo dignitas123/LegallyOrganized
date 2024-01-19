@@ -1,0 +1,21 @@
+# General
+.env
+.vscode
+.git
+.gitignore
+
+# Node specific
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build / Dist
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
