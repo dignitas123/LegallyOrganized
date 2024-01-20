@@ -7,7 +7,7 @@
       <q-input type="textarea" filled v-model="legalRequest.caseDescription" label="Case Description" :rules="[val => !!val || 'Field is required']" />
       <q-select filled v-model="legalRequest.caseType" :options="caseTypes" label="Case Type" :rules="[val => !!val || 'Field is required']" />
       <q-file filled v-model="documents" label="Document Attachments" multiple />
-      <q-btn label="Submit" type="submit" color="primary" class="full-width" />
+      <q-btn label="Submit" type="submit" color="secondary" />
     </q-form>
   </q-page>
 </template>
