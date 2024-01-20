@@ -61,7 +61,7 @@ onMounted(async () => {
 
 async function fetchLegalRequests() {
   try {
-    const response = await axios.get('http://localhost:8000/api/legal_requests/');
+    const response = await axios.get('http://localhost:8000/api/legal-requests/');
     legalRequests.value = response.data;
   } catch (error) {
     console.error('Error fetching legal requests:', error);

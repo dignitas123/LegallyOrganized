@@ -55,7 +55,7 @@ const onSubmit = async () => {
 
     // Step 2: Create the legal request
     legalRequest.value.client = clientId;
-    const requestResponse = await axios.post('http://localhost:8000/api/legal_requests/', legalRequest.value);
+    const requestResponse = await axios.post('http://localhost:8000/api/legal-requests/', legalRequest.value);
     const requestId = requestResponse.data.id;
 
     // Step 3: Upload documents
@@ -63,7 +63,7 @@ const onSubmit = async () => {
     documents.value.forEach((document, index) => {
       formData.append(`documents[${index}]`, document);
     });
-    await axios.post(`http://localhost:8000/api/document_attachments/?legal_request_id=${requestId}`, formData, {
+    await axios.post(`http://localhost:8000/api/document-attachments/?legal_request_id=${requestId}`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
