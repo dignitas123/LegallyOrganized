@@ -5,3 +5,9 @@
 ```bash
 docker compose up --build
 ```
+
+# Migration
+
+```bash
+docker-compose exec backend python manage.py migrate
+```
