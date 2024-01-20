@@ -1,13 +1,15 @@
 <template>
-  <q-page padding>
-    <q-form @submit.prevent="onSubmit" class="q-gutter-md">
+  <q-page>
+    <q-form @submit.prevent="onSubmit" class="q-gutter-md q-my-md">
       <q-input filled v-model="client.name" label="Client Name" :rules="[val => !!val || 'Field is required']" />
       <q-input filled v-model="client.email" label="Email" :rules="[val => !!val || 'Field is required']" />
       <q-input filled v-model="client.phone" label="Phone" :rules="[val => !!val || 'Field is required']" />
       <q-input type="textarea" filled v-model="legalRequest.caseDescription" label="Case Description" :rules="[val => !!val || 'Field is required']" />
       <q-select filled v-model="legalRequest.caseType" :options="caseTypes" label="Case Type" :rules="[val => !!val || 'Field is required']" />
       <q-file filled v-model="documents" label="Document Attachments" multiple />
-      <q-btn label="Submit" type="submit" color="secondary" />
+      <div class="q-ml-md">
+        <q-btn label="Submit" type="submit" color="secondary" class="full-width" />
+      </div>
     </q-form>
   </q-page>
 </template>
