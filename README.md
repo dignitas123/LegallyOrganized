@@ -1,4 +1,6 @@
-# LegallyOrganid
+# LegallyOrganized
+
+Welcome to Legally Organized!
 
 # Start Docker to see dev build
 
